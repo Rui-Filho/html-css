@@ -1,0 +1,19 @@
+
+
+body
+
+{background-color: aqua;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{background-color: aliceblue;
+    color: blue;
+}
+h2 
+{color: blueviolet;background-color: aquamarine;
+}
+
+p 
+{text-align: justify;
+}
