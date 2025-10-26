@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formulário</title>
+    <style>
+        form {
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Cadastro de Usuário</h1>
+
+<form action="cadastro.php" method="post" autocomplete="on">
+
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+
+    <p>
+      <label for="inome">Nome completo:</label><br>
+      <input type="text" id="inome" name="nome" placeholder="Digite seu nome" required>
+    </p>
+
+    <p>
+      <label for="iemail">E-mail:</label><br>
+      <input type="email" id="iemail" name="email" placeholder="exemplo@email.com" required>
+    </p>
+
+    <p>
+      <label for="itel">Telefone:</label><br>
+      <input type="tel" id="itel" name="telefone" placeholder="(00) 00000-0000">
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Dados de Acesso</legend>
+
+    <p>
+      <label for="iusuario">Usuário:</label><br>
+      <input type="text" id="iusuario" name="usuario" required>
+    </p>
+
+    <p>
+      <label for="isenha">Senha:</label><br>
+      <input type="password" id="isenha" name="senha" required>
+    </p>
+
+    <p>
+      <label for="iconfirme">Confirmar senha:</label><br>
+      <input type="password" id="iconfirme" name="confirme" required>
+    </p>
+  </fieldset>
+
+  <p>
+    <input type="submit" value="Cadastrar">
+    <input type="reset" value="Limpar">
+  </p>
+
+</form>
+
+    
+</body>
+</html>
